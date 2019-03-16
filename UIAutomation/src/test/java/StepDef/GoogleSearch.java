@@ -11,7 +11,7 @@ import testUtil.Tablehelper;
 
 public class GoogleSearch extends TestBase {
 	
-	//Googlesearch search = new Googlesearch(driver);
+	Googlesearch search = new Googlesearch(driver);
 	//Tablehelper tab = new Tablehelper(driver);
 
 @Given("^open google url$")
@@ -25,9 +25,9 @@ public void open_google_url() throws Throwable {
 @When("^Ente the Text$")
 public void ente_the_Text() throws Throwable {
 	
-	//search.GoogleSearchdata("Testing");
-	Tablehelper.findwebelement();
-	Tablehelper.Webelementvalue();
+	search.GoogleSearchdata("Testing");
+	//Tablehelper.findwebelement();
+	//Tablehelper.Webelementvalue();
 	System.out.println("enter the text");
     }
 
