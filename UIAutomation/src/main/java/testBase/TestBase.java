@@ -72,16 +72,16 @@ public class TestBase {
 //	}
 	
 	
-	//Thread.sleep(3000);
-	// WebElement ele =driver.findElement(By.xpath("//a[@class='fancybox'][contains(text(),'Signin')]"));
+	Thread.sleep(3000);
+	 WebElement ele =driver.findElement(By.xpath("//a[@class='fancybox'][contains(text(),'Signin')]"));
 	
-//	ele.click();
+	ele.click();
 	
 	//
 
-//	driver.findElement(By.xpath("//*[@id='load_form']/fieldset[1]/input[@name='username']")).sendKeys("test");
-//	driver.findElement(By.xpath("//*[@id='load_form']/fieldset[2]/input[@name='password']")).sendKeys("test");
-//	driver.findElement(By.cssSelector("div#login input.button")).click();;
+	driver.findElement(By.xpath("//*[@id='load_form']/fieldset[1]/input[@name='username']")).sendKeys("test");
+	driver.findElement(By.xpath("//*[@id='load_form']/fieldset[2]/input[@name='password']")).sendKeys("test");
+	driver.findElement(By.cssSelector("div#login input.button")).click();;
 }
 	
 	@AfterClass

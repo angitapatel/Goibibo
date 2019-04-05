@@ -37,9 +37,9 @@ public class Googlesearch extends TestBase{
 	
 	{
 		driver.navigate().to("https://www.google.com/");
-		//goglesearch.click();
+		goglesearch.click();
 		Thread.sleep(2000);
-		//Entertext.sendKeys("testing");
+		Entertext.sendKeys("testing");
 		driver.findElement(By.xpath("//input[@title = 'Search']")).sendKeys(str);
 		System.out.println("clicked");
 		
